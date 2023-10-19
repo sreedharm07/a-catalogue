@@ -2,3 +2,7 @@ component: catalogue
 service_type: ClusterIP
 targetPort: 8080
 PARAMETERS: "catalogue.pod.mongo_url,MONGO_URL catalogue.prod.DOCUMENTDB,DOCUMENTDB"
+env: prod
+schema:
+  enabled: true
+  db_type: MONGODB
